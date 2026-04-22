@@ -1,0 +1,23 @@
+title: BanglaLLM
+tagline_bn: "বাংলা ভাষার জন্য উন্মুক্ত ভাষা-মডেল গবেষণা"
+tagline_en: "Open language-model research for Bangla"
+description: "BanglaLLM is an open research effort building language models, datasets, and benchmarks for Bangla."
+url: "https://banglallm.github.io"
+baseurl: ""
+
+github_url: "https://github.com/banglallm"
+huggingface_url: "https://huggingface.co/BanglaLLM"
+contact_email: "brishtiteveja@gmail.com"
+
+markdown: kramdown
+
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - docs
+  - .claude

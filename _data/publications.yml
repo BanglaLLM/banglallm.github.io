@@ -1,0 +1,37 @@
+published:
+  - year: 2026
+    venue: "LoResLM @ EACL 2026"
+    title_bn: "BanglaLlama: বাংলা ভাষার জন্য LLaMA"
+    title_en: "BanglaLlama: LLaMA for Bangla Language"
+    authors:
+      - { name: "Abdullah Khan Zehady", lab: true }
+      - { name: "Shubhashis Roy Dipta", lab: true }
+      - { name: "Naymul Islam", lab: true }
+      - { name: "Safi Al Mamun", lab: true }
+      - { name: "Santu Karmaker", lab: true }
+    arxiv: "https://arxiv.org/abs/2410.21200"
+    acl: null
+    note_bn: "Bangla-Alpaca (৫২k) ও Bangla-Orca (১৭২k) ইনস্ট্রাকশন ডেটাসেট, এবং ৫টি BanglaLlama মডেল ভেরিয়েন্ট উন্মুক্ত।"
+    note_en: "Introduces Bangla-Alpaca (52k) and Bangla-Orca (172k) instruction datasets, plus 5 open BanglaLlama model variants."
+
+  - year: 2025
+    venue: "BLP @ IJCNLP-AACL 2025"
+    title_bn: "Read Between the Lines: বাংলা সংবাদে রাজনৈতিক পক্ষপাত উন্মোচনের একটি বেঞ্চমার্ক"
+    title_en: "Read Between the Lines: A Benchmark for Uncovering Political Bias in Bangla News Articles"
+    authors:
+      - { name: "Nusrat Jahan Lia", lab: true }
+      - { name: "Shubhashis Roy Dipta", lab: true }
+      - { name: "Abdullah Khan Zehady", lab: true }
+      - { name: "Naymul Islam", lab: true }
+      - { name: "Madhusodan Chakraborty", lab: true }
+      - { name: "Abdullah Al Wasif", lab: false }
+    arxiv: "https://arxiv.org/abs/2510.03898"
+    acl: "https://aclanthology.org/2025.banglalp-1.5/"
+    note_bn: "BanglaBias — ২০০টি লেখার বেঞ্চমার্ক (সরকারপন্থী / সরকার-সমালোচক / নিরপেক্ষ), ২৮টি LLM-এর উপর মূল্যায়ন।"
+    note_en: "BanglaBias — a 200-article benchmark with three-way labels (gov-leaning / gov-critique / neutral), evaluated across 28 LLMs."
+
+in_progress:
+  - title_bn: "TutorLM"
+    title_en: "TutorLM"
+    note_bn: "বাংলায় শিক্ষামূলক সহায়তার জন্য মডেল তৈরির কাজ চলমান। প্রিপ্রিন্ট শীঘ্রই।"
+    note_en: "Building tutoring-oriented Bengali models. Preprint coming soon."

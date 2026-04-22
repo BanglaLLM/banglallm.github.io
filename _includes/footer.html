@@ -1,0 +1,15 @@
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <p class="footer-note">
+      <span data-bn>{{ site.data.site_content.footer_note_bn | default: "কোড ও কন্টেন্ট MIT লাইসেন্সের অধীনে। এই সাইটের সোর্স উন্মুক্ত।" }}</span>
+      <span data-en>{{ site.data.site_content.footer_note_en | default: "Code and content under MIT. This site's source is open." }}</span>
+    </p>
+    <p class="footer-links">
+      <a href="{{ site.github_url }}/banglallm.github.io" rel="noopener"><span data-bn>সাইট সোর্স</span><span data-en>Site source</span></a>
+      <span class="dot">·</span>
+      <a href="{{ site.github_url }}" rel="noopener">GitHub</a>
+      <span class="dot">·</span>
+      <a href="{{ site.huggingface_url }}" rel="noopener">HuggingFace</a>
+    </p>
+  </div>
+</footer>

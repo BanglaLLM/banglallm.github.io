@@ -1,0 +1,54 @@
+- name: "Abdullah Khan Zehady"
+  name_bn: "আব্দুল্লাহ খান জেহাদী"
+  role_bn: "গবেষণা প্রধান"
+  role_en: "Research lead"
+  affiliation_bn: "Perspectivity-এর প্রতিষ্ঠাতা"
+  affiliation_en: "Founder, Perspectivity"
+  github: "https://github.com/brishtiteveja"
+
+- name: "Shubhashis Roy Dipta"
+  name_bn: "শুভাশীষ রায় দিপ্ত"
+  role_bn: "গবেষক"
+  role_en: "Researcher"
+  affiliation_bn: "পিএইচডি শিক্ষার্থী, UMBC"
+  affiliation_en: "PhD, UMBC"
+  github: "https://github.com/dipta007"
+  website: "https://roydipta.com/"
+
+- name: "Santu Karmaker"
+  name_bn: "শান্তু কর্মকার"
+  role_bn: "গবেষণা উপদেষ্টা"
+  role_en: "Research advisor"
+  affiliation_bn: "সহকারী অধ্যাপক, UCF — Bridge-AI Lab"
+  affiliation_en: "Assistant Professor, UCF — Bridge-AI Lab"
+  website: "https://karmake2.github.io/"
+
+- name: "Naymul Islam"
+  name_bn: "নাঈমুল ইসলাম"
+  role_bn: "গবেষক"
+  role_en: "Researcher"
+  affiliation_bn: null
+  affiliation_en: null
+  github: "https://github.com/ai-naymul"
+
+- name: "Safi Al Mamun"
+  name_bn: "সাফি আল মামুন"
+  role_bn: "গবেষক"
+  role_en: "Researcher"
+  affiliation_bn: null
+  affiliation_en: null
+
+- name: "Nusrat Jahan Lia"
+  name_bn: "নুসরাত জাহান লিয়া"
+  role_bn: "গবেষক"
+  role_en: "Researcher"
+  affiliation_bn: null
+  affiliation_en: null
+  github: "https://github.com/NusRAT-LiA"
+
+- name: "Madhusodan Chakraborty"
+  name_bn: "মধুসূদন চক্রবর্তী"
+  role_bn: "গবেষক"
+  role_en: "Researcher"
+  affiliation_bn: null
+  affiliation_en: null

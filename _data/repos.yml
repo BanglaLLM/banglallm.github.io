@@ -1,0 +1,39 @@
+- name: "bangla-llama"
+  body_en: "Training notebooks for the BanglaLlama family — LLaMA 2/3/3.1/3.2, Mistral, Mixtral, Unsloth."
+  body_bn: "BanglaLlama পরিবারের ট্রেনিং নোটবুক — LLaMA 2/3/3.1/3.2, Mistral, Mixtral, Unsloth।"
+  link: "https://github.com/banglallm/bangla-llama"
+
+- name: "s1-bengali"
+  body_en: "Test-time scaling adapted for Bengali reasoning."
+  body_bn: "বাংলা রিজনিংয়ের জন্য টেস্ট-টাইম স্কেলিং।"
+  link: "https://github.com/banglallm/s1-bengali"
+
+- name: "lm-evaluation-harness"
+  body_en: "Evaluation framework fork — Bangla-oriented tasks and benchmarks."
+  body_bn: "মূল্যায়ন ফ্রেমওয়ার্ক ফর্ক — বাংলা-কেন্দ্রিক টাস্ক ও বেঞ্চমার্ক।"
+  link: "https://github.com/banglallm/lm-evaluation-harness"
+
+- name: "BanglaDataManager"
+  body_en: "Dataset management infrastructure for Bangla LLM work."
+  body_bn: "বাংলা LLM কাজের জন্য ডেটাসেট ব্যবস্থাপনা অবকাঠামো।"
+  link: "https://github.com/banglallm/BanglaDataManager"
+
+- name: "bd-newspaper-crawlers"
+  body_en: "Crawlers for Bangla news sources and blogs."
+  body_bn: "বাংলা সংবাদ উৎস ও ব্লগের জন্য ক্রলার।"
+  link: "https://github.com/banglallm/bd-newspaper-crawlers"
+
+- name: "Open-Translator"
+  body_en: "Open-source translation agent."
+  body_bn: "উন্মুক্ত অনুবাদ এজেন্ট।"
+  link: "https://github.com/banglallm/Open-Translator"
+
+- name: "youtube_bangla"
+  body_en: "Q&A system over Bangla YouTube content."
+  body_bn: "বাংলা ইউটিউব কন্টেন্টের উপর প্রশ্ন-উত্তর সিস্টেম।"
+  link: "https://github.com/banglallm/youtube_bangla"
+
+- name: "OpenMAIC"
+  body_en: "Multi-agent interactive classroom platform."
+  body_bn: "মাল্টি-এজেন্ট ইন্টারঅ্যাক্টিভ ক্লাসরুম প্ল্যাটফর্ম।"
+  link: "https://github.com/banglallm/OpenMAIC"
