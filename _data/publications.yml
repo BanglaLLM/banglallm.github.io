@@ -27,8 +27,8 @@ published:
       - { name: "Abdullah Al Wasif", lab: false }
     arxiv: "https://arxiv.org/abs/2510.03898"
     acl: "https://aclanthology.org/2025.banglalp-1.5/"
-    note_bn: "BanglaBias — ২০০টি লেখার বেঞ্চমার্ক (সরকারপন্থী / সরকার-সমালোচক / নিরপেক্ষ), ২৮টি LLM-এর উপর মূল্যায়ন।"
-    note_en: "BanglaBias — a 200-article benchmark with three-way labels (gov-leaning / gov-critique / neutral), evaluated across 28 LLMs."
+    note_bn: "BanglaBias, ২০০টি লেখার বেঞ্চমার্ক (সরকারপন্থী / সরকার-সমালোচক / নিরপেক্ষ), ২৮টি LLM-এর উপর মূল্যায়ন।"
+    note_en: "BanglaBias, a 200-article benchmark with three-way labels (gov-leaning / gov-critique / neutral), evaluated across 28 LLMs."
 
 in_progress:
   - title_bn: "TutorLM"

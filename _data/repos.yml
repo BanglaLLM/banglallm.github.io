@@ -1,6 +1,6 @@
 - name: "bangla-llama"
-  body_en: "Training notebooks for the BanglaLlama family — LLaMA 2/3/3.1/3.2, Mistral, Mixtral, Unsloth."
-  body_bn: "BanglaLlama পরিবারের ট্রেনিং নোটবুক — LLaMA 2/3/3.1/3.2, Mistral, Mixtral, Unsloth।"
+  body_en: "Training notebooks for the BanglaLlama family. LLaMA 2/3/3.1/3.2, Mistral, Mixtral, Unsloth."
+  body_bn: "BanglaLlama পরিবারের ট্রেনিং নোটবুক। LLaMA 2/3/3.1/3.2, Mistral, Mixtral, Unsloth।"
   link: "https://github.com/banglallm/bangla-llama"
 
 - name: "s1-bengali"
@@ -9,8 +9,8 @@
   link: "https://github.com/banglallm/s1-bengali"
 
 - name: "lm-evaluation-harness"
-  body_en: "Evaluation framework fork — Bangla-oriented tasks and benchmarks."
-  body_bn: "মূল্যায়ন ফ্রেমওয়ার্ক ফর্ক — বাংলা-কেন্দ্রিক টাস্ক ও বেঞ্চমার্ক।"
+  body_en: "Evaluation framework fork with Bangla-oriented tasks and benchmarks."
+  body_bn: "মূল্যায়ন ফ্রেমওয়ার্ক ফর্ক, বাংলা-কেন্দ্রিক টাস্ক ও বেঞ্চমার্ক।"
   link: "https://github.com/banglallm/lm-evaluation-harness"
 
 - name: "BanglaDataManager"

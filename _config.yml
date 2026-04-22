@@ -1,4 +1,5 @@
 title: BanglaLLM
+theme: null
 tagline_bn: "বাংলা ভাষার জন্য উন্মুক্ত ভাষা-মডেল গবেষণা"
 tagline_en: "Open language-model research for Bangla"
 description: "BanglaLLM is an open research effort building language models, datasets, and benchmarks for Bangla."

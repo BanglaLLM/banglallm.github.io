@@ -169,7 +169,20 @@ html[data-lang="bn"] .body-text { font-size: 17px; }
 
 /* People */
 .people-list { list-style: none; padding: 0; margin: 0; }
-.person { padding: 14px 0; border-bottom: 1px solid var(--rule); display: flex; flex-direction: column; gap: 2px; }
+.person { padding: 16px 0; border-bottom: 1px solid var(--rule); display: flex; gap: 16px; align-items: center; }
+.person-photo {
+  width: 56px; height: 56px; border-radius: 50%;
+  object-fit: cover; flex-shrink: 0;
+  background: var(--tag-bg);
+  border: 1px solid var(--rule);
+}
+.person-photo.placeholder {
+  display: inline-flex; align-items: center; justify-content: center;
+  color: var(--ink-faint); font-weight: 600; font-size: 15px;
+  letter-spacing: 0.03em;
+  font-family: "Inter", system-ui, sans-serif;
+}
+.person-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
 .person-name { font-weight: 600; color: var(--ink); font-size: 16px; }
 .person-name a { color: var(--ink); border: 0; }
 .person-name a:hover { color: var(--accent); }

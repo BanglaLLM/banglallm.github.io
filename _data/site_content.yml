@@ -1,8 +1,8 @@
 about:
   bn: >
-    BanglaLLM একটি স্বাধীন, উন্মুক্ত গবেষণা সমষ্টি — বাংলা ভাষার জন্য ভাষা-মডেল তৈরি করা আমাদের লক্ষ্য। আমরা মনে করি, একটি ভাষাকে "পরে যোগ করা" ভাষা হিসেবে দেখা আর একে প্রথম দিন থেকে বিবেচনায় রাখা — এই দুইয়ের মধ্যে পার্থক্য বিশাল। তাই আমরা মডেল, ডেটাসেট, বেঞ্চমার্ক — সব কিছু বাংলাকে মাথায় রেখে তৈরি করি এবং সম্পূর্ণ উন্মুক্তভাবে প্রকাশ করি।
+    BanglaLLM একটি স্বাধীন, উন্মুক্ত গবেষণা সমষ্টি। বাংলা ভাষার জন্য ভাষা-মডেল তৈরি করা আমাদের লক্ষ্য। আমরা মনে করি, একটি ভাষাকে "পরে যোগ করা" ভাষা হিসেবে দেখা আর একে প্রথম দিন থেকে বিবেচনায় রাখা, এই দুইয়ের মধ্যে পার্থক্য বিশাল। তাই আমরা মডেল, ডেটাসেট, বেঞ্চমার্ক, সব কিছু বাংলাকে মাথায় রেখে তৈরি করি এবং সম্পূর্ণ উন্মুক্তভাবে প্রকাশ করি।
   en: >
-    BanglaLLM is an independent, open research effort building language models for Bangla. We think there's a real difference between treating a language as an afterthought and designing for it from day one — so we build models, datasets, and benchmarks with Bangla in mind, and we release everything openly.
+    BanglaLLM is an independent, open research effort building language models for Bangla. We think there's a real difference between treating a language as an afterthought and designing for it from day one. So we build models, datasets, and benchmarks with Bangla in mind, and we release everything openly.
 
 themes:
   - name_bn: "ভিত্তি-মডেল"
@@ -10,7 +10,7 @@ themes:
     body_bn: >
       Llama ও Qwen-এর উপর ভিত্তি করে বাংলা ভাষার জন্য নতুন টোকেনাইজেশন, প্রাক-প্রশিক্ষণ ও ইনস্ট্রাকশন-টিউনিং। BanglaLlama পরিবারে ৩বি থেকে ৩৩বি পর্যন্ত বিভিন্ন মাপের মডেল, সব HuggingFace-এ উন্মুক্ত।
     body_en: >
-      New tokenization, continued pre-training, and instruction-tuning for Bangla — built on Llama and Qwen. The BanglaLlama family ranges from 3B to 33B; all released openly on HuggingFace.
+      New tokenization, continued pre-training, and instruction-tuning for Bangla, built on Llama and Qwen. The BanglaLlama family ranges from 3B to 33B; all released openly on HuggingFace.
   - name_bn: "মূল্যায়ন ও বেঞ্চমার্ক"
     name_en: "Evaluation and benchmarks"
     body_bn: >
@@ -20,24 +20,24 @@ themes:
   - name_bn: "ডেটা অবকাঠামো"
     name_en: "Data infrastructure"
     body_bn: >
-      ভালো মডেলের জন্য ভালো ডেটা দরকার, এবং বাংলার জন্য সেই ডেটা নিজেদের তৈরি করতে হয়। সংবাদ ক্রলার, অনুবাদ করা ইনস্ট্রাকশন ডেটাসেট (Bangla-Alpaca, Bangla-Orca), গণিতের ডেটাসেট — সব উন্মুক্ত।
+      ভালো মডেলের জন্য ভালো ডেটা দরকার, এবং বাংলার জন্য সেই ডেটা নিজেদের তৈরি করতে হয়। সংবাদ ক্রলার, অনুবাদ করা ইনস্ট্রাকশন ডেটাসেট (Bangla-Alpaca, Bangla-Orca), গণিতের ডেটাসেট, সব উন্মুক্ত।
     body_en: >
-      Good models need good data, and for Bangla we've had to build most of it ourselves. News crawlers, translated instruction datasets (Bangla-Alpaca, Bangla-Orca), math datasets — all open.
+      Good models need good data, and for Bangla we've had to build most of it ourselves. News crawlers, translated instruction datasets (Bangla-Alpaca, Bangla-Orca), math datasets, all open.
   - name_bn: "গবেষণা থেকে পণ্যে"
     name_en: "Research to product"
     body_bn: >
-      বেঞ্চে পড়ে থাকা গবেষণার চেয়ে মানুষের হাতে পৌঁছানো গবেষণা আমাদের কাছে বেশি অর্থবহ। Drishtikon — বাংলাদেশের জন্য সংবাদ-পাঠের একটি প্ল্যাটফর্ম — এই ল্যাবের কাজের উপর গড়ে উঠেছে।
+      বেঞ্চে পড়ে থাকা গবেষণার চেয়ে মানুষের হাতে পৌঁছানো গবেষণা আমাদের কাছে বেশি অর্থবহ। Drishtikon, বাংলাদেশের জন্য সংবাদ-পাঠের একটি প্ল্যাটফর্ম, এই ল্যাবের কাজের উপর গড়ে উঠেছে।
     body_en: >
-      Research that reaches people matters more to us than research that stays on a shelf. Drishtikon — a news-literacy platform for Bangladesh — is built on this lab's work.
+      Research that reaches people matters more to us than research that stays on a shelf. Drishtikon, a news-literacy platform for Bangladesh, is built on this lab's work.
 
 drishtikon:
   title_bn: "দৃষ্টিকোণ"
   title_en: "Drishtikon"
   body_bn: >
-    Drishtikon একটি বাংলা সংবাদ-সাক্ষরতা প্ল্যাটফর্ম — প্রতিটি খবরের একাধিক উৎস, পক্ষপাতের মানচিত্র, এবং একটি কথোপকথনমূলক ইন্টারফেস যাতে পাঠক প্রশ্ন করতে পারেন। এটি BongLLaMA মডেলের উপর চলে, এবং আমাদের পক্ষপাত-সনাক্তকরণ গবেষণা ("Read Between the Lines") এই প্ল্যাটফর্মের মূল ভিত্তি।
-    গবেষণাগার ও পণ্যের সংযোগ আমাদের কাছে একটি গুরুত্বপূর্ণ বিষয় — একটি মডেল কেবল বেঞ্চমার্কে ভালো করলেই যথেষ্ট নয়, সেটি মানুষের কাছে পৌঁছাতে হবে।
+    Drishtikon একটি বাংলা সংবাদ-সাক্ষরতা প্ল্যাটফর্ম। প্রতিটি খবরের একাধিক উৎস, পক্ষপাতের মানচিত্র, এবং একটি কথোপকথনমূলক ইন্টারফেস যাতে পাঠক প্রশ্ন করতে পারেন। এটি BongLLaMA মডেলের উপর চলে, এবং আমাদের পক্ষপাত-সনাক্তকরণ গবেষণা ("Read Between the Lines") এই প্ল্যাটফর্মের মূল ভিত্তি।
+    গবেষণাগার ও পণ্যের সংযোগ আমাদের কাছে একটি গুরুত্বপূর্ণ বিষয়। একটি মডেল কেবল বেঞ্চমার্কে ভালো করলেই যথেষ্ট নয়, সেটি মানুষের কাছে পৌঁছাতে হবে।
   body_en: >
-    Drishtikon is a Bengali news-literacy platform — multiple sources per story, a bias map, and a conversational interface for readers to ask questions. It runs on BongLLaMA, and our bias-detection research ("Read Between the Lines") feeds the platform's core.
+    Drishtikon is a Bengali news-literacy platform with multiple sources per story, a bias map, and a conversational interface for readers to ask questions. It runs on BongLLaMA, and our bias-detection research ("Read Between the Lines") feeds the platform's core.
     The loop between the lab and the product matters to us: a model that scores well on benchmarks but never reaches readers isn't the outcome we're after.
   url: "https://drishtikon.life"
   parent_name: "Perspectivity"
@@ -45,6 +45,6 @@ drishtikon:
 
 join:
   body_bn: >
-    আমরা সহযোগিতার জন্য উন্মুক্ত — ছাত্র, গবেষক, ইঞ্জিনিয়ার, কিংবা যারা বাংলা ভাষার প্রযুক্তি নিয়ে কাজ করতে চান। কাজের সবচেয়ে সহজ শুরু হলো GitHub-এ issue খোলা বা PR পাঠানো।
+    আমরা সহযোগিতার জন্য উন্মুক্ত। ছাত্র, গবেষক, ইঞ্জিনিয়ার, কিংবা যারা বাংলা ভাষার প্রযুক্তি নিয়ে কাজ করতে চান, সবাইকে স্বাগত। কাজের সবচেয়ে সহজ শুরু হলো GitHub-এ issue খোলা বা PR পাঠানো।
   body_en: >
-    We're open to collaboration — students, researchers, engineers, or anyone who wants to build Bangla-language technology with us. The easiest way in is opening a GitHub issue or sending a pull request.
+    We're open to collaboration. Students, researchers, engineers, or anyone who wants to build Bangla-language technology with us. The easiest way in is opening a GitHub issue or sending a pull request.

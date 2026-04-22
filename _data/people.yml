@@ -5,6 +5,7 @@
   affiliation_bn: "Perspectivity-এর প্রতিষ্ঠাতা"
   affiliation_en: "Founder, Perspectivity"
   github: "https://github.com/brishtiteveja"
+  photo: "/assets/people/aninda.jpg"
 
 - name: "Shubhashis Roy Dipta"
   name_bn: "শুভাশীষ রায় দিপ্ত"
@@ -14,14 +15,16 @@
   affiliation_en: "PhD, UMBC"
   github: "https://github.com/dipta007"
   website: "https://roydipta.com/"
+  photo: "/assets/people/dipta.jpg"
 
 - name: "Santu Karmaker"
   name_bn: "শান্তু কর্মকার"
   role_bn: "গবেষণা উপদেষ্টা"
   role_en: "Research advisor"
-  affiliation_bn: "সহকারী অধ্যাপক, UCF — Bridge-AI Lab"
-  affiliation_en: "Assistant Professor, UCF — Bridge-AI Lab"
+  affiliation_bn: "সহকারী অধ্যাপক, UCF, Bridge-AI Lab"
+  affiliation_en: "Assistant Professor, UCF, Bridge-AI Lab"
   website: "https://karmake2.github.io/"
+  photo: "/assets/people/santu.jpg"
 
 - name: "Naymul Islam"
   name_bn: "নাঈমুল ইসলাম"
@@ -30,6 +33,7 @@
   affiliation_bn: null
   affiliation_en: null
   github: "https://github.com/ai-naymul"
+  photo: "/assets/people/naimul.jpg"
 
 - name: "Safi Al Mamun"
   name_bn: "সাফি আল মামুন"
@@ -37,6 +41,7 @@
   role_en: "Researcher"
   affiliation_bn: null
   affiliation_en: null
+  photo: "/assets/people/safi.jpg"
 
 - name: "Nusrat Jahan Lia"
   name_bn: "নুসরাত জাহান লিয়া"
@@ -45,6 +50,7 @@
   affiliation_bn: null
   affiliation_en: null
   github: "https://github.com/NusRAT-LiA"
+  photo: "/assets/people/lia.jpg"
 
 - name: "Madhusodan Chakraborty"
   name_bn: "মধুসূদন চক্রবর্তী"
@@ -52,3 +58,12 @@
   role_en: "Researcher"
   affiliation_bn: null
   affiliation_en: null
+  photo: "/assets/people/opu.jpg"
+
+- name: "Sibgat Zehady"
+  name_bn: "সিবগাত জেহাদী"
+  role_bn: "গবেষক"
+  role_en: "Researcher"
+  affiliation_bn: null
+  affiliation_en: null
+  photo: "/assets/people/sibgat.jpg"
