@@ -16,11 +16,11 @@ Every human-readable field has `_bn` (Bengali) and `_en` (English) variants. Bot
 
 ## Local preview
 
-Requires Ruby 3.x and Bundler.
+Requires Ruby 3.x and Bundler. On macOS, to prevent the default system Ruby from shadowing your Homebrew Ruby installation, run commands using the absolute Homebrew paths:
 
 ```bash
-bundle install
-bundle exec jekyll serve
+/opt/homebrew/opt/ruby/bin/bundle install
+/opt/homebrew/opt/ruby/bin/bundle exec jekyll serve
 ```
 
 Open http://localhost:4000.
