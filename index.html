@@ -80,6 +80,19 @@ layout: default
       </strong>.
       <span data-bn>{{ p.note_bn }}</span>
       <span data-en>{{ p.note_en }}</span>
+      {% if p.paper or p.dataset or p.repo %}
+      <div class="pub-links" style="margin-top: 4px;">
+        {% if p.paper %}<a href="{{ p.paper }}" rel="noopener">Paper</a>{% endif %}
+        {% if p.dataset %}
+          {% if p.paper %}<span class="dot">·</span>{% endif %}
+          <a href="{{ p.dataset }}" rel="noopener">Dataset</a>
+        {% endif %}
+        {% if p.repo %}
+          {% if p.paper or p.dataset %}<span class="dot">·</span>{% endif %}
+          <a href="{{ p.repo }}" rel="noopener">GitHub</a>
+        {% endif %}
+      </div>
+      {% endif %}
     </li>
     {% endfor %}
   </ul>
