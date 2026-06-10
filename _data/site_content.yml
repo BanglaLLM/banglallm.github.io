@@ -14,9 +14,9 @@ themes:
   - name_bn: "মূল্যায়ন ও বেঞ্চমার্ক"
     name_en: "Evaluation and benchmarks"
     body_bn: >
-      বাংলা ভাষায় মডেলের কাজ কতটুকু ভালো তা মাপার পদ্ধতি এখনও অনেকটা অনুপস্থিত। আমরা রাজনৈতিক পক্ষপাত সনাক্তকরণ, গণিত যুক্তি, এবং পরীক্ষার-সময় স্কেলিং-এর মতো ক্ষেত্রে বেঞ্চমার্ক তৈরি করছি।
+      বাংলা ভাষায় মডেলের কাজ কতটুকু ভালো তা মাপার পদ্ধতি এখনও অনেকটা অনুপস্থিত। আমরা রাজনৈতিক পক্ষপাত সনাক্তকরণ, গণিত যুক্তি, এবং পরীক্ষার-সময় স্কেলিং-এর মতো ক্ষেত্রে বেঞ্চমার্ক তৈরি করছি। এর পাশাপাশি আমরা বাংলা এলএলএম-এর নিরাপত্তা, নির্ভরযোগ্যতা এবং ক্ষতিকর বিষয়বস্তু সনাক্তকরণের জন্য বেঞ্চমার্ক তৈরি করছি, যার একটি বাস্তব উদাহরণ হলো BanglaSafe।
     body_en: >
-      Measuring how well a model actually performs in Bangla is still largely an open question. We're building benchmarks around political-bias detection, mathematical reasoning, and test-time scaling.
+      Measuring how well a model actually performs in Bangla is still largely an open question. We're building benchmarks around political-bias detection, mathematical reasoning, and test-time scaling. Additionally, we are building benchmarks for safety, robustness, and harm detection in Bengali LLMs, with BanglaSafe as a concrete example.
   - name_bn: "ডেটা অবকাঠামো"
     name_en: "Data infrastructure"
     body_bn: >
