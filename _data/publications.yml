@@ -31,6 +31,11 @@ published:
     note_en: "BanglaBias, a 200-article benchmark with three-way labels (gov-leaning / gov-critique / neutral), evaluated across 28 LLMs."
 
 in_progress:
+  - title_bn: "BanglaSafe: রেজিস্টার-শিফ্ট এবং কাভার-ন্যারেটিভের মাধ্যমে বাংলায় LLM সেফটি বাইপাস এবং বাংলাদেশ-নির্দিষ্ট ক্ষতিকর বিষয়ের শ্রেণীবিন্যাস"
+    title_en: "BanglaSafe: Register-Shift and Cover-Narrative Bypass of LLM Safety in Bengali, with a Bangladesh-Specific Harm Taxonomy"
+    note_bn: "BanglaSafe বেঞ্চমার্কের উপস্থাপনা, যা ১৭টি আইন-ভিত্তিক ক্যাটাগরিতে ৮৭৯টি প্রম্পট এবং ৪-স্তরের ক্যালিব্রেটেড LLM জাজ নিয়ে গঠিত। ১৮টি ফ্রন্টিয়ার মডেলের উপর এটি সেফটি ফেইলিউর উন্মোচন করে।"
+    note_en: "Presents BanglaSafe, a benchmark of 879 prompts spanning 17 Bangladesh-statute-anchored categories, and a 4-way calibrated LLM judge. Uncovers systematic safety failures across 18 frontier models."
+
   - title_bn: "TutorLM"
     title_en: "TutorLM"
     note_bn: "বাংলায় শিক্ষামূলক সহায়তার জন্য মডেল তৈরির কাজ চলমান। প্রিপ্রিন্ট শীঘ্রই।"
