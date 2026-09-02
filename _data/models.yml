@@ -13,6 +13,7 @@ families:
 
 datasets:
   - name: "BanglaSafe"
+    license: "https://creativecommons.org/licenses/by/4.0/"
     size_bn: "৮৭৯টি প্রশ্ন"
     size_en: "879 questions"
     desc_bn: "বাংলায় নিরাপত্তা যাচাইয়ের প্রশ্নপত্র। বাংলাদেশের আইন থেকে নেওয়া ১৭ ধরনের ক্ষতি, প্রতিটি প্রশ্ন পাঁচ রকম ভঙ্গিতে লেখা। EMNLP 2026 Findings গবেষণা থেকে।"

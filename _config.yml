@@ -1,8 +1,11 @@
 title: BanglaLLM
 theme: null
+# `tagline` is what jekyll-seo-tag appends to <title>. Keep the whole title
+# under ~60 characters or Google truncates it in results.
+tagline: "Open Bangla and Bengali language model research"
 tagline_bn: "বাংলা ভাষার জন্য উন্মুক্ত এআই গবেষণা"
 tagline_en: "Open AI research for the Bangla language"
-description: "BanglaLLM is an independent research group building AI language models, training data, and tests for Bangla. Everything is free to download."
+description: "Open research on Bangla (Bengali) language models: BanglaLlama, instruction datasets, and BanglaSafe, our EMNLP 2026 safety benchmark. Free to download."
 url: "https://banglallm.github.io"
 baseurl: ""
 
