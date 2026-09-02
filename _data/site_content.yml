@@ -1,75 +1,75 @@
 about:
   bn: >
-    BanglaLLM একটি স্বাধীন, উন্মুক্ত গবেষণা সমষ্টি। বাংলা ভাষার জন্য ভাষা-মডেল তৈরি করা আমাদের লক্ষ্য। আমরা মনে করি, একটি ভাষাকে "পরে যোগ করা" ভাষা হিসেবে দেখা আর একে প্রথম দিন থেকে বিবেচনায় রাখা, এই দুইয়ের মধ্যে পার্থক্য বিশাল। এই পার্থক্য সব জায়গায় ধরা পড়ে: মডেল কী জানে তাতে, তাকে কতটা ঠিকভাবে মাপা হয় তাতে, এবং বাংলায় অনুরোধ এলে তার নিরাপত্তা-প্রশিক্ষণ আদৌ টিকে থাকে কি না তাতে। তাই আমরা মডেল, ডেটাসেট, বেঞ্চমার্ক ও নিরাপত্তা মূল্যায়ন, সব কিছু বাংলাকে মাথায় রেখে তৈরি করি এবং সম্পূর্ণ উন্মুক্তভাবে প্রকাশ করি।
+    বেশিরভাগ এআই মডেল আগে ইংরেজির জন্য তৈরি হয়, বাংলা যোগ হয় অনেক পরে। ফলটা চোখে পড়ে। মডেল বাংলা নিয়ে কম জানে, বাংলায় সে আসলে কতটা ভালো কাজ করে তা মাপার ভালো উপায় প্রায় নেই, আর ইংরেজিতে যে নিরাপত্তা-প্রশিক্ষণ কাজ করে একই প্রশ্ন বাংলায় করলে সেটি প্রায়ই কাজ করা বন্ধ করে দেয়। BanglaLLM একটি স্বাধীন গবেষণা দল, আমরা এই সমস্যা নিয়ে কাজ করি। আমরা বাংলা ভাষার মডেল বানাই, সেগুলো শেখানোর ডেটা বানাই, আর সেগুলো যাচাই করার পরীক্ষা বানাই। সব কিছু যে কেউ বিনামূল্যে নামিয়ে ব্যবহার করতে পারেন।
   en: >
-    BanglaLLM is an independent, open research effort building language models for Bangla. We think there's a real difference between treating a language as an afterthought and designing for it from day one. That difference shows up everywhere: in what a model knows, in how well anyone can measure it, and in whether its safety training survives a request written in Bengali. So we build models, datasets, benchmarks, and safety evaluations with Bangla in mind, and we release everything openly.
+    Most AI models are built for English first, and Bangla gets added long afterwards. It shows. The models know less about Bangla, there is almost no good way to measure how well they actually handle it, and safety training that holds up in English often stops working when the same question is asked in Bengali. BanglaLLM is an independent research group working on that. We build Bangla language models, the data used to teach them, and the tests used to check them. Anyone can download and use all of it for free.
 
 themes:
   - name_bn: "ভিত্তি-মডেল"
     name_en: "Foundation models"
     body_bn: >
-      Llama ও Qwen-এর উপর ভিত্তি করে বাংলা ভাষার জন্য নতুন টোকেনাইজেশন, প্রাক-প্রশিক্ষণ ও ইনস্ট্রাকশন-টিউনিং। BanglaLlama পরিবারে ১বি থেকে ১৩বি পর্যন্ত বিভিন্ন মাপের মডেল, সব HuggingFace-এ উন্মুক্ত।
+      Llama আর Qwen-এর মতো উন্মুক্ত মডেল নিয়ে আমরা সেগুলোকে বাংলা লেখা দিয়ে আবার প্রশিক্ষণ দিই। এর মধ্যে আছে বাংলা হরফ আরও দক্ষভাবে পড়তে শেখানো, আর বাংলায় লেখা নির্দেশ মেনে চলতে শেখানো। BanglaLlama পরিবারে ১বি থেকে ১৩বি প্যারামিটারের মডেল আছে, প্রতিটি HuggingFace থেকে বিনামূল্যে নামানো যায়।
     body_en: >
-      New tokenization, continued pre-training, and instruction-tuning for Bangla, built on Llama and Qwen. The BanglaLlama family ranges from 1B to 13B; all released openly on HuggingFace.
-  - name_bn: "নিরাপত্তা ও অ্যালাইনমেন্ট"
-    name_en: "Safety and alignment"
+      We take open models like Llama and Qwen and retrain them on Bangla text. That includes teaching them to read Bangla script more efficiently and to follow instructions written in Bangla. The BanglaLlama family runs from 1B to 13B parameters, and every size is free to download on HuggingFace.
+  - name_bn: "নিরাপত্তা"
+    name_en: "Safety"
     body_bn: >
-      ইংরেজিতে করা নিরাপত্তা-প্রশিক্ষণ বাংলায় অবিকৃতভাবে কাজ করে না। আমাদের EMNLP 2026 Findings গবেষণা BanglaSafe দেখায়, একই ক্ষতিকর অনুরোধ রেখে শুধু লেখার ঢং বদলে দিলে মডেলের সাড়া দেওয়ার হার ১৭.৫ পয়েন্ট বেড়ে যায়। এই ধরনের ব্যর্থতা মাপার জন্য প্রয়োজনীয় বেঞ্চমার্ক ও বাংলাদেশের আইন-ভিত্তিক ক্ষতির শ্রেণিবিন্যাস আমরা তৈরি করি।
+      ইংরেজিতে দেওয়া নিরাপত্তা-প্রশিক্ষণ বাংলায় এসে টেকে না। আমাদের EMNLP 2026 Findings গবেষণা BanglaSafe-এ আমরা মডেলকে একই ক্ষতিকর প্রশ্ন করেছি, শুধু লেখার ধরন বদলে দিয়ে। খবরের কাগজের ভাষায় লিখলে সাধারণ খুদে বার্তার ভাষার চেয়ে ১৭.৫ পয়েন্ট বেশিবার মডেল উত্তর দিয়েছে। এই সমস্যা ধরার পরীক্ষা আমরা বানাই, আর ক্ষতির ধরনগুলো সাজাই বাংলাদেশের আইনে যা অপরাধ সেই অনুযায়ী।
     body_en: >
-      Safety training done in English does not carry over cleanly to Bengali. BanglaSafe, our EMNLP 2026 Findings paper, shows that holding a harmful request fixed and changing only how it is written moves model compliance by 17.5 points. We build the benchmarks and the Bangladesh-law-anchored harm taxonomies that make failures like this measurable.
-  - name_bn: "মূল্যায়ন ও বেঞ্চমার্ক"
-    name_en: "Evaluation and benchmarks"
+      Safety training done in English does not survive the trip to Bengali. In BanglaSafe, our EMNLP 2026 Findings paper, we asked models the same harmful question several ways and changed nothing but the writing style. Written like a newspaper article, it got answered 17.5 points more often than written like a casual text message. We build the tests that catch this, and we sort the harms by what Bangladeshi law actually treats as a crime.
+  - name_bn: "মূল্যায়ন"
+    name_en: "Evaluation"
     body_bn: >
-      বাংলা ভাষায় মডেলের কাজ কতটুকু ভালো তা মাপার পদ্ধতি এখনও অনেকটা অনুপস্থিত। আমরা রাজনৈতিক পক্ষপাত সনাক্তকরণ, গণিত যুক্তি, এবং পরীক্ষার-সময় স্কেলিং-এর মতো ক্ষেত্রে বেঞ্চমার্ক তৈরি করছি, সঙ্গে সেগুলো চালানোর জন্য উন্মুক্ত টুলিং।
+      একটি মডেল বাংলায় কতটা ভালো, তা যাচাই করার মতো পরীক্ষা প্রায় নেই। আমরা সেই পরীক্ষাগুলো বানাচ্ছি: মডেল খবরে রাজনৈতিক পক্ষপাত ধরতে পারে কি না, বাংলায় গণিতের সমস্যা মেলাতে পারে কি না, আর বেশি সময় ভাবতে দিলে সে আরও ভালো করে কি না। পরীক্ষা চালানোর সরঞ্জামও উন্মুক্ত।
     body_en: >
-      Measuring how well a model actually performs in Bangla is still largely an open question. We're building benchmarks around political-bias detection, mathematical reasoning, and test-time scaling, along with the open tooling to run them.
-  - name_bn: "ডেটা অবকাঠামো"
-    name_en: "Data infrastructure"
+      If you want to know whether a model is any good at Bangla, there is very little to test it with. We are building those tests: whether a model can spot political slant in news, whether it can work through a math problem in Bangla, and whether it gets better when you give it more time to think. The tools to run them are open too.
+  - name_bn: "ডেটা"
+    name_en: "Data"
     body_bn: >
-      ভালো মডেলের জন্য ভালো ডেটা দরকার, এবং বাংলার জন্য সেই ডেটা নিজেদের তৈরি করতে হয়। সংবাদ ক্রলার, অনুবাদ করা ইনস্ট্রাকশন ডেটাসেট (Bangla-Alpaca, Bangla-Orca), গণিতের ডেটাসেট, সব উন্মুক্ত।
+      একটি মডেল যত ভালো লেখা থেকে শেখে, ততটাই ভালো হয়। বাংলার জন্য সেই লেখার বেশিরভাগই তৈরি অবস্থায় ছিল না, তাই আমরা নিজেরাই বানিয়েছি। আমরা বাংলা খবর সংগ্রহ করি, নির্দেশনার ডেটাসেট বাংলায় অনুবাদ করি (Bangla-Alpaca ও Bangla-Orca), আর গণিতের ডেটাসেট বানাই। সবই উন্মুক্ত।
     body_en: >
-      Good models need good data, and for Bangla we've had to build most of it ourselves. News crawlers, translated instruction datasets (Bangla-Alpaca, Bangla-Orca), math datasets, all open.
+      A model is only as good as the text it learns from, and for Bangla most of that text did not exist in usable form, so we made it. We collect Bangla news, translate instruction datasets into Bangla (Bangla-Alpaca and Bangla-Orca), and build math datasets. All of it is public.
   - name_bn: "গবেষণা থেকে পণ্যে"
     name_en: "Research to product"
     body_bn: >
-      বেঞ্চে পড়ে থাকা গবেষণার চেয়ে মানুষের হাতে পৌঁছানো গবেষণা আমাদের কাছে বেশি অর্থবহ। Drishtikon, বাংলাদেশের জন্য সংবাদ-পাঠের একটি প্ল্যাটফর্ম, এই ল্যাবের কাজের উপর গড়ে উঠেছে।
+      কাজটা কাগজে পড়ে না থেকে মানুষের ব্যবহারে আসুক, আমরা সেটাই চাই। Drishtikon একটি অ্যাপ, যেখানে বাংলাদেশের পাঠক দেখতে পান একই খবর ভিন্ন ভিন্ন সংবাদমাধ্যম কীভাবে দিচ্ছে। এটি এই ল্যাবের কাজের উপর তৈরি।
     body_en: >
-      Research that reaches people matters more to us than research that stays on a shelf. Drishtikon, a news-literacy platform for Bangladesh, is built on this lab's work.
+      We would rather the work end up in something people use than sit in a paper. Drishtikon, an app that lets Bangladeshi readers compare how different outlets covered the same story, is built on this lab's work.
 
 drishtikon:
   title_bn: "দৃষ্টিকোণ"
   title_en: "Drishtikon"
   body_bn: >
-    Drishtikon একটি বাংলা সংবাদ-সাক্ষরতা প্ল্যাটফর্ম। প্রতিটি খবরের একাধিক উৎস, পক্ষপাতের মানচিত্র, এবং একটি কথোপকথনমূলক ইন্টারফেস যাতে পাঠক প্রশ্ন করতে পারেন। এটি BongLLaMA মডেলের উপর চলে, এবং আমাদের পক্ষপাত-সনাক্তকরণ গবেষণা ("Read Between the Lines") এই প্ল্যাটফর্মের মূল ভিত্তি।
-    গবেষণাগার ও পণ্যের সংযোগ আমাদের কাছে একটি গুরুত্বপূর্ণ বিষয়। একটি মডেল কেবল বেঞ্চমার্কে ভালো করলেই যথেষ্ট নয়, সেটি মানুষের কাছে পৌঁছাতে হবে।
+    Drishtikon একই খবর একাধিক সংবাদমাধ্যম কীভাবে দিয়েছে তা পাশাপাশি দেখায়, কোন মাধ্যম কোন দিকে ঝুঁকে আছে তা চিহ্নিত করে, আর পাঠক যা পড়ছেন তা নিয়ে প্রশ্ন করতে পারেন। এটি BongLLaMA মডেলে চলে। পক্ষপাত চিহ্নিত করার কাজটি আসে আমাদের "Read Between the Lines" গবেষণা থেকে।
+    এটি বানাতে গিয়ে আমাদের সৎ থাকতে হয়। বেঞ্চমার্কে ভালো নম্বর পাওয়া সহজ, কিন্তু তাতে এমন কিছুও তৈরি হতে পারে যা কেউ ব্যবহার করতে পারে না।
   body_en: >
-    Drishtikon is a Bengali news-literacy platform with multiple sources per story, a bias map, and a conversational interface for readers to ask questions. It runs on BongLLaMA, and our bias-detection research ("Read Between the Lines") feeds the platform's core.
-    The loop between the lab and the product matters to us: a model that scores well on benchmarks but never reaches readers isn't the outcome we're after.
+    Drishtikon puts several outlets' coverage of the same story side by side, marks where each one leans politically, and lets readers ask questions about what they are reading. It runs on BongLLaMA. The political slant marking comes out of our paper "Read Between the Lines".
+    Building it keeps us honest. Scoring well on a benchmark is easy enough, and you can still end up with something nobody can use.
   url: "https://drishtikon.life"
   parent_name: "Perspectivity"
   parent_url: "https://perspectivity.co"
 
 join:
   body_bn: >
-    আমরা সহযোগিতার জন্য উন্মুক্ত। ছাত্র, গবেষক, ইঞ্জিনিয়ার, কিংবা যারা বাংলা ভাষার প্রযুক্তি নিয়ে কাজ করতে চান, সবাইকে স্বাগত।
+    আমরা ছাত্র, গবেষক ও ইঞ্জিনিয়ারদের সঙ্গে কাজ করি। বাংলা ভাষার প্রযুক্তি তৈরিতে যিনিই হাত লাগাতে চান, তাঁর কাছ থেকে শুনতে আমরা আগ্রহী।
   body_en: >
-    We're open to collaboration. Students, researchers, engineers, or anyone who wants to build Bangla-language technology with us.
+    We work with students, researchers, and engineers, and we are glad to hear from anyone who wants to help build Bangla language technology.
   contacts:
     - label_bn: "কোড ও ইস্যু"
       label_en: "Code and issues"
       value: "github.com/banglallm"
       url: "https://github.com/banglallm"
-      note_bn: "বাগ, ডেটার সমস্যা, বা পুল রিকোয়েস্ট। শুরু করার সবচেয়ে সহজ পথ।"
-      note_en: "Bugs, data problems, or a pull request. The easiest way in."
+      note_bn: "বাগ জানান, ডেটার ভুল ধরিয়ে দিন, বা কোড পাঠান। শুরু করার সহজতম জায়গা।"
+      note_en: "Report a bug, flag a mistake in the data, or send code. The easiest place to start."
     - label_bn: "নাঈমুল ইসলাম"
       label_en: "Naymul Islam"
       value: "naymul504@gmail.com"
       url: "mailto:naymul504@gmail.com"
-      note_bn: "গবেষণা সহযোগিতা, বেঞ্চমার্ক জমা দেওয়া, ডেটাসেটের অনুরোধ।"
-      note_en: "Research collaboration, benchmark submissions, dataset requests."
+      note_bn: "একসঙ্গে গবেষণা, BanglaSafe লিডারবোর্ডে নিজের মডেল যোগ করা, বা ডেটাসেট চাওয়া।"
+      note_en: "Working together on research, adding your model to the BanglaSafe leaderboard, or asking for a dataset."
     - label_bn: "আব্দুল্লাহ খান জেহাদী"
       label_en: "Abdullah Khan Zehady"
       value: "brishtiteveja@gmail.com"
       url: "mailto:brishtiteveja@gmail.com"
-      note_bn: "ল্যাবের দিকনির্দেশনা ও অংশীদারিত্ব।"
-      note_en: "Lab direction and partnerships."
+      note_bn: "ল্যাব কোন দিকে যাচ্ছে, আর অংশীদারিত্ব।"
+      note_en: "Where the lab is heading, and partnerships."

@@ -15,11 +15,11 @@ published:
     code: "https://github.com/BanglaLLM/banglasafe"
     dataset: "https://huggingface.co/datasets/BanglaLLM/BanglaSafe"
     figure: "/assets/figures/banglasafe-register-effect.png"
-    figure_alt: "Bar chart of attack success rate across five prompting conditions; Bengali formal journalism is highest at 63.3 percent and colloquial Banglish peer-help lowest at 45.8 percent."
-    figure_caption_en: "The same harmful request in five framings. Written as formal Bengali journalism it is answered 17.5 points more often than as a casual Banglish message. Both are Bengali, so the gap is register, not language."
-    figure_caption_bn: "একই ক্ষতিকর অনুরোধ পাঁচটি ভিন্ন ঢঙে। আনুষ্ঠানিক বাংলা সাংবাদিকতার ভাষায় লিখলে সেটি সাধারণ বাংলিশ বার্তার চেয়ে ১৭.৫ পয়েন্ট বেশি উত্তর পায়। দুটোই বাংলা, তাই পার্থক্যটা ভাষার নয়, ঢঙের।"
-    note_bn: "BanglaSafe, বাংলাদেশের আইনের সঙ্গে যুক্ত ১৭টি ক্ষতির শ্রেণিতে ৮৭৯টি বাংলা প্রম্পট। একই অনুরোধ রেখে শুধু লেখার ঢং বদলে দিলে মডেলের সাড়া দেওয়ার হার ১৭.৫ পয়েন্ট বাড়ে, ১৮টি মডেলের ১৫,৮২২টি উত্তরের উপর মাপা।"
-    note_en: "BanglaSafe, 879 natively written Bengali prompts across 17 harm categories anchored to Bangladeshi law. Holding a request fixed and changing only its register moves compliance by 17.5 points, measured over 15,822 responses from 18 models with a calibrated four-way judge."
+    figure_alt: "Bar chart comparing how often models answered the same harmful question written five different ways. Newspaper-style Bengali is highest at 63.3 percent and casual Banglish is lowest at 45.8 percent."
+    figure_caption_en: "The same harmful question, written five different ways. In the style of a newspaper article it gets answered 17.5 points more often than in the style of a casual text message. Both are Bengali, so what changed is the tone, not the language."
+    figure_caption_bn: "একই ক্ষতিকর প্রশ্ন, পাঁচ রকমভাবে লেখা। খবরের কাগজের ভাষায় লিখলে সাধারণ খুদে বার্তার ভাষার চেয়ে ১৭.৫ পয়েন্ট বেশিবার উত্তর মেলে। দুটোই বাংলা, তাই বদলেছে কেবল ভঙ্গি, ভাষা নয়।"
+    note_bn: "আমরা ৮৭৯টি ক্ষতিকর প্রশ্ন ইংরেজি থেকে অনুবাদ না করে সরাসরি বাংলায় লিখেছি। প্রশ্নগুলো ১৭ ধরনের ক্ষতির আওতায় পড়ে, যেগুলোকে বাংলাদেশের আইন অপরাধ বলে গণ্য করে। প্রশ্ন একই রেখে কেবল লেখার ধরন বদলালে মডেল ১৭.৫ পয়েন্ট বেশিবার উত্তর দেয়। ১৮টি মডেলের ১৫,৮২২টি উত্তরের উপর মাপা, প্রতিটি উত্তর চার ধাপের মাপকাঠিতে যাচাই করা, যা মানুষের দেওয়া নম্বরের সঙ্গে মিলিয়ে দেখা হয়েছে।"
+    note_en: "We wrote 879 harmful questions in Bengali rather than translating them from English, covering 17 kinds of harm that Bangladeshi law treats as a crime. Keep the question the same and change only how it is written, and models answer 17.5 points more often. Measured over 15,822 answers from 18 models, each graded on a four-point scale that was checked against human graders."
 
   - year: 2026
     venue: "LoResLM @ EACL 2026"
@@ -33,8 +33,8 @@ published:
       - { name: "Santu Karmaker", lab: true }
     arxiv: "https://arxiv.org/abs/2410.21200"
     acl: null
-    note_bn: "Bangla-Alpaca (৫২k) ও Bangla-Orca (১৭২k) ইনস্ট্রাকশন ডেটাসেট, এবং ৫টি BanglaLlama মডেল ভেরিয়েন্ট উন্মুক্ত।"
-    note_en: "Introduces Bangla-Alpaca (52k) and Bangla-Orca (172k) instruction datasets, plus 5 open BanglaLlama model variants."
+    note_bn: "দুটি বাংলা প্রশিক্ষণ ডেটাসেট তৈরি করা হয়েছে: Bangla-Alpaca, ৫২ হাজার উদাহরণ, এবং Bangla-Orca, ১৭২ হাজার। সেগুলো দিয়ে বানানো ৫টি BanglaLlama মডেলও উন্মুক্ত করা হয়েছে।"
+    note_en: "Introduces two Bangla training sets, Bangla-Alpaca with 52,000 examples and Bangla-Orca with 172,000, and releases 5 BanglaLlama models built with them."
 
   - year: 2025
     venue: "BLP @ IJCNLP-AACL 2025"
@@ -49,11 +49,11 @@ published:
       - { name: "Abdullah Al Wasif", lab: false }
     arxiv: "https://arxiv.org/abs/2510.03898"
     acl: "https://aclanthology.org/2025.banglalp-1.5/"
-    note_bn: "BanglaBias, ২০০টি লেখার বেঞ্চমার্ক (সরকারপন্থী / সরকার-সমালোচক / নিরপেক্ষ), ২৮টি LLM-এর উপর মূল্যায়ন।"
-    note_en: "BanglaBias, a 200-article benchmark with three-way labels (gov-leaning / gov-critique / neutral), evaluated across 28 LLMs."
+    note_bn: "BanglaBias, ২০০টি বাংলা সংবাদ নিবন্ধ। প্রতিটিকে চিহ্নিত করা হয়েছে সরকারপন্থী, সরকার-সমালোচক বা নিরপেক্ষ হিসেবে। ২৮টি ভাষা-মডেল এই পার্থক্য কতটা ধরতে পারে, আমরা তা যাচাই করেছি।"
+    note_en: "BanglaBias, 200 Bangla news articles, each labeled as leaning towards the government, critical of it, or neutral. We tested 28 language models on how well they could tell the difference."
 
 in_progress:
   - title_bn: "TutorLM"
     title_en: "TutorLM"
-    note_bn: "বাংলায় শিক্ষামূলক সহায়তার জন্য মডেল তৈরির কাজ চলমান। প্রিপ্রিন্ট শীঘ্রই।"
-    note_en: "Building tutoring-oriented Bengali models. Preprint coming soon."
+    note_bn: "শিক্ষার্থীদের পড়াতে পারে এমন বাংলা মডেল নিয়ে কাজ চলছে। গবেষণাপত্র এখনও প্রকাশিত হয়নি।"
+    note_en: "Bengali models that can tutor students. The paper is not out yet."
