@@ -12,8 +12,12 @@ contact_email: "brishtiteveja@gmail.com"
 
 markdown: kramdown
 
+logo: /assets/apple-touch-icon.png
+image: /assets/og-image.png
+
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 exclude:
   - Gemfile
@@ -22,3 +26,5 @@ exclude:
   - vendor
   - docs
   - .claude
+  - .agents
+  - skills-lock.json
