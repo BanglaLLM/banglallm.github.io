@@ -19,6 +19,14 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+# Google Search Console's verification file must be served byte for byte, so it
+# carries no front matter. Keep it out of the sitemap from here instead.
+defaults:
+  - scope:
+      path: "google2d36de6fcb122608.html"
+    values:
+      sitemap: false
+
 exclude:
   - Gemfile
   - Gemfile.lock
