@@ -11,6 +11,7 @@ this adds the entities Google can actually do something with:
 
 All generated from _data so it cannot drift from what the page shows.
 {%- endcomment -%}
+{%- assign lang = page.lang | default: 'en' -%}
 {%- assign org_id = site.url | append: '/#organization' -%}
 {%- capture logo_url %}{{ site.url }}{{ site.logo }}{% endcapture -%}
 <script type="application/ld+json">
@@ -68,8 +69,8 @@ All generated from _data so it cannot drift from what the page shows.
       "@type": "ScholarlyArticle",
       "headline": {{ p.title_en | jsonify }},
       "name": {{ p.title_en | jsonify }},
-      "description": {{ p.note_en | jsonify }},
-      "inLanguage": "en",
+      "description": {% if lang == 'bn' %}{{ p.note_bn | jsonify }}{% else %}{{ p.note_en | jsonify }}{% endif %},
+      "inLanguage": "{{ lang }}",
       "datePublished": "{{ p.year }}",
       {%- if p.arxiv %}
       "url": {{ p.arxiv | jsonify }},
@@ -92,7 +93,7 @@ All generated from _data so it cannot drift from what the page shows.
     {
       "@type": "Dataset",
       "name": {{ d.name | jsonify }},
-      "description": {{ d.desc_en | jsonify }},
+      "description": {% if lang == 'bn' %}{{ d.desc_bn | jsonify }}{% else %}{{ d.desc_en | jsonify }}{% endif %},
       "url": {{ d.url | jsonify }},
       "sameAs": {{ d.url | jsonify }},
       "inLanguage": "bn",
@@ -118,7 +119,7 @@ All generated from _data so it cannot drift from what the page shows.
     {
       "@type": "SoftwareSourceCode",
       "name": {{ r.name | jsonify }},
-      "description": {{ r.body_en | jsonify }},
+      "description": {% if lang == 'bn' %}{{ r.body_bn | jsonify }}{% else %}{{ r.body_en | jsonify }}{% endif %},
       "codeRepository": {{ r.link | jsonify }},
       "url": {{ r.link | jsonify }},
       "author": { "@id": {{ org_id | jsonify }} }

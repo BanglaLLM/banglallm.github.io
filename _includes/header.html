@@ -1,22 +1,29 @@
+{%- assign lang = page.lang | default: 'en' -%}
 <header class="site-header">
   <div class="wrap header-row">
-    <a href="{{ '/' | relative_url }}" class="wordmark">
+    <a href="{% if lang == 'bn' %}{{ '/bn/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}" class="wordmark">
       <svg class="wordmark-mark" viewBox="0 0 64 64" width="24" height="24" aria-hidden="true" focusable="false"><rect x="0" y="2.00" width="64" height="10.01" fill="currentColor"/><path transform="translate(7.857 62.000) scale(0.08942 -0.08942)" fill="currentColor" d="M560 559H475V0H340V1L339 0L37 209V343Q182 461 340 504V559H-20V671H560ZM340 146V371Q237 330 163 274Z"/></svg>
       <span>BanglaLLM</span>
     </a>
-    <nav class="site-nav" id="site-nav" aria-label="Primary">
-      <a href="#research"><span data-bn>গবেষণা</span><span data-en>Research</span></a>
-      <a href="#publications"><span data-bn>প্রকাশনা</span><span data-en>Publications</span></a>
-      <a href="#models"><span data-bn>মডেল</span><span data-en>Models</span></a>
-      <a href="#people"><span data-bn>আমরা</span><span data-en>People</span></a>
+    <nav class="site-nav" id="site-nav" aria-label="{% if lang == 'bn' %}প্রধান{% else %}Primary{% endif %}">
+      <a href="#research">{% if lang == 'bn' %}গবেষণা{% else %}Research{% endif %}</a>
+      <a href="#publications">{% if lang == 'bn' %}প্রকাশনা{% else %}Publications{% endif %}</a>
+      <a href="#models">{% if lang == 'bn' %}মডেল{% else %}Models{% endif %}</a>
+      <a href="#people">{% if lang == 'bn' %}আমরা{% else %}People{% endif %}</a>
       <a href="{{ site.github_url }}" rel="noopener">GitHub</a>
       <a href="{{ site.huggingface_url }}" rel="noopener">HuggingFace</a>
     </nav>
     <div class="header-actions">
-      <button id="lang-toggle" class="lang-toggle" type="button" aria-live="polite">
-        <span data-bn>EN</span><span data-en>বাং</span>
-      </button>
-      <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
+      {%- comment -%}
+      A real link, not a JS toggle, so each language is a crawlable URL and the
+      two pages link to each other.
+      {%- endcomment -%}
+      {% if lang == 'bn' %}
+      <a class="lang-toggle" href="{{ '/' | relative_url }}" hreflang="en" lang="en" rel="alternate">EN</a>
+      {% else %}
+      <a class="lang-toggle" href="{{ '/bn/' | relative_url }}" hreflang="bn" lang="bn" rel="alternate">বাং</a>
+      {% endif %}
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-label="{% if lang == 'bn' %}মেনু{% else %}Menu{% endif %}" aria-expanded="false" aria-controls="site-nav">
         <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
       </button>
     </div>

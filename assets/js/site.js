@@ -1,28 +1,5 @@
-/* Language toggle */
-(function () {
-  var KEY = "banglallm_lang";
-  var html = document.documentElement;
-  var btn = document.getElementById("lang-toggle");
-
-  var saved = null;
-  try { saved = localStorage.getItem(KEY); } catch (e) {}
-  if (saved === "bn" || saved === "en") setLang(saved);
-
-  if (btn) {
-    btn.addEventListener("click", function () {
-      var next = html.getAttribute("data-lang") === "bn" ? "en" : "bn";
-      setLang(next);
-      try { localStorage.setItem(KEY, next); } catch (e) {}
-    });
-  }
-
-  function setLang(lang) {
-    html.setAttribute("data-lang", lang);
-    html.setAttribute("lang", lang);
-  }
-})();
-
-/* Mobile nav */
+/* Mobile nav. The language switch is a plain link to the other language's URL,
+   so it needs no JavaScript and stays crawlable. */
 (function () {
   var toggle = document.getElementById("nav-toggle");
   var nav = document.getElementById("site-nav");
@@ -48,7 +25,6 @@
     }
   });
 
-  // Widening past the breakpoint must not strand the panel in its open state
   var mq = window.matchMedia("(min-width: 721px)");
   function onChange(e) { if (e.matches) setOpen(false); }
   if (mq.addEventListener) { mq.addEventListener("change", onChange); }

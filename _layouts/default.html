@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" data-lang="en">
+{%- assign lang = page.lang | default: 'en' -%}
+<html lang="{{ lang }}" data-lang="{{ lang }}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,6 +8,13 @@
 <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}">
 <link rel="apple-touch-icon" href="{{ '/assets/apple-touch-icon.png' | relative_url }}">
 <meta name="theme-color" content="#faf7f1">
+{%- comment -%}
+Each language lives at its own URL and they declare each other. Without this
+Google reads the two pages as duplicates instead of translations.
+{%- endcomment -%}
+<link rel="alternate" hreflang="en" href="{{ site.url }}/">
+<link rel="alternate" hreflang="bn" href="{{ site.url }}/bn/">
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
