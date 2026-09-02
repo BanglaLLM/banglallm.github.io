@@ -1,1 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="10" fill="#1a1a1a"/><text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" font-family="Hind Siliguri, system-ui, sans-serif" font-size="36" font-weight="700" fill="#fafaf8">ব</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<style>.ink{fill:#1f5fb4}@media (prefers-color-scheme: dark){.ink{fill:#fafaf8}}</style>
+<rect class="ink" x="0" y="2.00" width="64" height="10.01"/>
+<g class="ink" transform="translate(7.857 62.000) scale(0.08942 -0.08942)"><path d="M560 559H475V0H340V1L339 0L37 209V343Q182 461 340 504V559H-20V671H560ZM340 146V371Q237 330 163 274Z"/></g>
+</svg>

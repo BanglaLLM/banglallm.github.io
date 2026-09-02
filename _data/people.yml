@@ -7,10 +7,19 @@
   github: "https://github.com/brishtiteveja"
   photo: "/assets/people/aninda.jpg"
 
+- name: "Naymul Islam"
+  name_bn: "নাঈমুল ইসলাম"
+  role_bn: "গবেষণা প্রধান"
+  role_en: "Research lead"
+  affiliation_bn: null
+  affiliation_en: null
+  github: "https://github.com/ai-naymul"
+  photo: "/assets/people/naimul.jpg"
+
 - name: "Shubhashis Roy Dipta"
   name_bn: "শুভাশীষ রায় দিপ্ত"
-  role_bn: "গবেষক"
-  role_en: "Researcher"
+  role_bn: "গবেষণা উপদেষ্টা"
+  role_en: "Research advisor"
   affiliation_bn: "পিএইচডি শিক্ষার্থী, UMBC"
   affiliation_en: "PhD, UMBC"
   github: "https://github.com/dipta007"
@@ -25,15 +34,6 @@
   affiliation_en: "Assistant Professor, UCF, Bridge-AI Lab"
   website: "https://karmake2.github.io/"
   photo: "/assets/people/santu.jpg"
-
-- name: "Naymul Islam"
-  name_bn: "নাঈমুল ইসলাম"
-  role_bn: "গবেষক"
-  role_en: "Researcher"
-  affiliation_bn: null
-  affiliation_en: null
-  github: "https://github.com/ai-naymul"
-  photo: "/assets/people/naimul.jpg"
 
 - name: "Safi Al Mamun"
   name_bn: "সাফি আল মামুন"
@@ -67,3 +67,17 @@
   affiliation_bn: null
   affiliation_en: null
   photo: "/assets/people/sibgat.jpg"
+
+- name: "Sabik Bin Sultan"
+  name_bn: "সাবিক বিন সুলতান"
+  role_bn: "গবেষক"
+  role_en: "Researcher"
+  affiliation_bn: null
+  affiliation_en: null
+
+- name: "Abdullah Al Wasif"
+  name_bn: "আব্দুল্লাহ আল ওয়াসিফ"
+  role_bn: "গবেষক"
+  role_en: "Researcher"
+  affiliation_bn: null
+  affiliation_en: null

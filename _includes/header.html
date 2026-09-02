@@ -1,7 +1,10 @@
 <header class="site-header">
   <div class="wrap header-row">
-    <a href="{{ '/' | relative_url }}" class="wordmark">BanglaLLM</a>
-    <nav class="site-nav" aria-label="Primary">
+    <a href="{{ '/' | relative_url }}" class="wordmark">
+      <svg class="wordmark-mark" viewBox="0 0 64 64" width="24" height="24" aria-hidden="true" focusable="false"><rect x="0" y="2.00" width="64" height="10.01" fill="currentColor"/><path transform="translate(7.857 62.000) scale(0.08942 -0.08942)" fill="currentColor" d="M560 559H475V0H340V1L339 0L37 209V343Q182 461 340 504V559H-20V671H560ZM340 146V371Q237 330 163 274Z"/></svg>
+      <span>BanglaLLM</span>
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
       <a href="#research"><span data-bn>গবেষণা</span><span data-en>Research</span></a>
       <a href="#publications"><span data-bn>প্রকাশনা</span><span data-en>Publications</span></a>
       <a href="#models"><span data-bn>মডেল</span><span data-en>Models</span></a>
@@ -9,8 +12,13 @@
       <a href="{{ site.github_url }}" rel="noopener">GitHub</a>
       <a href="{{ site.huggingface_url }}" rel="noopener">HuggingFace</a>
     </nav>
-    <button id="lang-toggle" class="lang-toggle" type="button" aria-live="polite">
-      <span data-bn>EN</span><span data-en>বাং</span>
-    </button>
+    <div class="header-actions">
+      <button id="lang-toggle" class="lang-toggle" type="button" aria-live="polite">
+        <span data-bn>EN</span><span data-en>বাং</span>
+      </button>
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
   </div>
 </header>

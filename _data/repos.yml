@@ -1,3 +1,8 @@
+- name: "banglasafe"
+  body_en: "The BanglaSafe benchmark and CLI. Runs the 879-prompt safety evaluation against any OpenAI-compatible endpoint. pip install banglasafe."
+  body_bn: "BanglaSafe বেঞ্চমার্ক ও CLI। যেকোনো OpenAI-সঙ্গতিপূর্ণ এন্ডপয়েন্টে ৮৭৯টি প্রম্পটের নিরাপত্তা মূল্যায়ন চালায়। pip install banglasafe।"
+  link: "https://github.com/BanglaLLM/banglasafe"
+
 - name: "bangla-llama"
   body_en: "Training notebooks for the BanglaLlama family. LLaMA 2/3/3.1/3.2, Mistral, Mixtral, Unsloth."
   body_bn: "BanglaLlama পরিবারের ট্রেনিং নোটবুক। LLaMA 2/3/3.1/3.2, Mistral, Mixtral, Unsloth।"

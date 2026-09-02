@@ -1,22 +1,28 @@
 about:
   bn: >
-    BanglaLLM একটি স্বাধীন, উন্মুক্ত গবেষণা সমষ্টি। বাংলা ভাষার জন্য ভাষা-মডেল তৈরি করা আমাদের লক্ষ্য। আমরা মনে করি, একটি ভাষাকে "পরে যোগ করা" ভাষা হিসেবে দেখা আর একে প্রথম দিন থেকে বিবেচনায় রাখা, এই দুইয়ের মধ্যে পার্থক্য বিশাল। তাই আমরা মডেল, ডেটাসেট, বেঞ্চমার্ক, সব কিছু বাংলাকে মাথায় রেখে তৈরি করি এবং সম্পূর্ণ উন্মুক্তভাবে প্রকাশ করি।
+    BanglaLLM একটি স্বাধীন, উন্মুক্ত গবেষণা সমষ্টি। বাংলা ভাষার জন্য ভাষা-মডেল তৈরি করা আমাদের লক্ষ্য। আমরা মনে করি, একটি ভাষাকে "পরে যোগ করা" ভাষা হিসেবে দেখা আর একে প্রথম দিন থেকে বিবেচনায় রাখা, এই দুইয়ের মধ্যে পার্থক্য বিশাল। এই পার্থক্য সব জায়গায় ধরা পড়ে: মডেল কী জানে তাতে, তাকে কতটা ঠিকভাবে মাপা হয় তাতে, এবং বাংলায় অনুরোধ এলে তার নিরাপত্তা-প্রশিক্ষণ আদৌ টিকে থাকে কি না তাতে। তাই আমরা মডেল, ডেটাসেট, বেঞ্চমার্ক ও নিরাপত্তা মূল্যায়ন, সব কিছু বাংলাকে মাথায় রেখে তৈরি করি এবং সম্পূর্ণ উন্মুক্তভাবে প্রকাশ করি।
   en: >
-    BanglaLLM is an independent, open research effort building language models for Bangla. We think there's a real difference between treating a language as an afterthought and designing for it from day one. So we build models, datasets, and benchmarks with Bangla in mind, and we release everything openly.
+    BanglaLLM is an independent, open research effort building language models for Bangla. We think there's a real difference between treating a language as an afterthought and designing for it from day one. That difference shows up everywhere: in what a model knows, in how well anyone can measure it, and in whether its safety training survives a request written in Bengali. So we build models, datasets, benchmarks, and safety evaluations with Bangla in mind, and we release everything openly.
 
 themes:
   - name_bn: "ভিত্তি-মডেল"
     name_en: "Foundation models"
     body_bn: >
-      Llama ও Qwen-এর উপর ভিত্তি করে বাংলা ভাষার জন্য নতুন টোকেনাইজেশন, প্রাক-প্রশিক্ষণ ও ইনস্ট্রাকশন-টিউনিং। BanglaLlama পরিবারে ৩বি থেকে ৩৩বি পর্যন্ত বিভিন্ন মাপের মডেল, সব HuggingFace-এ উন্মুক্ত।
+      Llama ও Qwen-এর উপর ভিত্তি করে বাংলা ভাষার জন্য নতুন টোকেনাইজেশন, প্রাক-প্রশিক্ষণ ও ইনস্ট্রাকশন-টিউনিং। BanglaLlama পরিবারে ১বি থেকে ১৩বি পর্যন্ত বিভিন্ন মাপের মডেল, সব HuggingFace-এ উন্মুক্ত।
     body_en: >
-      New tokenization, continued pre-training, and instruction-tuning for Bangla, built on Llama and Qwen. The BanglaLlama family ranges from 3B to 33B; all released openly on HuggingFace.
+      New tokenization, continued pre-training, and instruction-tuning for Bangla, built on Llama and Qwen. The BanglaLlama family ranges from 1B to 13B; all released openly on HuggingFace.
+  - name_bn: "নিরাপত্তা ও অ্যালাইনমেন্ট"
+    name_en: "Safety and alignment"
+    body_bn: >
+      ইংরেজিতে করা নিরাপত্তা-প্রশিক্ষণ বাংলায় অবিকৃতভাবে কাজ করে না। আমাদের EMNLP 2026 Findings গবেষণা BanglaSafe দেখায়, একই ক্ষতিকর অনুরোধ রেখে শুধু লেখার ঢং বদলে দিলে মডেলের সাড়া দেওয়ার হার ১৭.৫ পয়েন্ট বেড়ে যায়। এই ধরনের ব্যর্থতা মাপার জন্য প্রয়োজনীয় বেঞ্চমার্ক ও বাংলাদেশের আইন-ভিত্তিক ক্ষতির শ্রেণিবিন্যাস আমরা তৈরি করি।
+    body_en: >
+      Safety training done in English does not carry over cleanly to Bengali. BanglaSafe, our EMNLP 2026 Findings paper, shows that holding a harmful request fixed and changing only how it is written moves model compliance by 17.5 points. We build the benchmarks and the Bangladesh-law-anchored harm taxonomies that make failures like this measurable.
   - name_bn: "মূল্যায়ন ও বেঞ্চমার্ক"
     name_en: "Evaluation and benchmarks"
     body_bn: >
-      বাংলা ভাষায় মডেলের কাজ কতটুকু ভালো তা মাপার পদ্ধতি এখনও অনেকটা অনুপস্থিত। আমরা রাজনৈতিক পক্ষপাত সনাক্তকরণ, গণিত যুক্তি, এবং পরীক্ষার-সময় স্কেলিং-এর মতো ক্ষেত্রে বেঞ্চমার্ক তৈরি করছি।
+      বাংলা ভাষায় মডেলের কাজ কতটুকু ভালো তা মাপার পদ্ধতি এখনও অনেকটা অনুপস্থিত। আমরা রাজনৈতিক পক্ষপাত সনাক্তকরণ, গণিত যুক্তি, এবং পরীক্ষার-সময় স্কেলিং-এর মতো ক্ষেত্রে বেঞ্চমার্ক তৈরি করছি, সঙ্গে সেগুলো চালানোর জন্য উন্মুক্ত টুলিং।
     body_en: >
-      Measuring how well a model actually performs in Bangla is still largely an open question. We're building benchmarks around political-bias detection, mathematical reasoning, and test-time scaling.
+      Measuring how well a model actually performs in Bangla is still largely an open question. We're building benchmarks around political-bias detection, mathematical reasoning, and test-time scaling, along with the open tooling to run them.
   - name_bn: "ডেটা অবকাঠামো"
     name_en: "Data infrastructure"
     body_bn: >
