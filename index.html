@@ -136,7 +136,7 @@ layout: default
     <span data-bn>ডেটাসেট</span>
     <span data-en>Datasets</span>
   </h3>
-  <ul class="model-list">
+  <ul class="model-list two-col">
     {% for d in site.data.models.datasets %}
     <li>
       <a href="{{ d.url }}" rel="noopener" class="model-name">{{ d.name }}</a>
@@ -233,9 +233,19 @@ layout: default
     <span data-bn>{{ content.join.body_bn }}</span>
     <span data-en>{{ content.join.body_en }}</span>
   </p>
-  <p class="inline-links">
-    <a href="{{ site.github_url }}" rel="noopener">github.com/banglallm</a>
-    <span class="dot">·</span>
-    <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a>
-  </p>
+  <ul class="contact-list">
+    {% for c in content.join.contacts %}
+    <li class="contact">
+      <span class="contact-label">
+        <span data-bn>{{ c.label_bn }}</span>
+        <span data-en>{{ c.label_en }}</span>
+      </span>
+      <a class="contact-value" href="{{ c.url }}" rel="noopener">{{ c.value }}</a>
+      <span class="contact-note">
+        <span data-bn>{{ c.note_bn }}</span>
+        <span data-en>{{ c.note_en }}</span>
+      </span>
+    </li>
+    {% endfor %}
+  </ul>
 </section>

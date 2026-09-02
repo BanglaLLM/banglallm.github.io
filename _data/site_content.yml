@@ -51,6 +51,25 @@ drishtikon:
 
 join:
   body_bn: >
-    আমরা সহযোগিতার জন্য উন্মুক্ত। ছাত্র, গবেষক, ইঞ্জিনিয়ার, কিংবা যারা বাংলা ভাষার প্রযুক্তি নিয়ে কাজ করতে চান, সবাইকে স্বাগত। কাজের সবচেয়ে সহজ শুরু হলো GitHub-এ issue খোলা বা PR পাঠানো।
+    আমরা সহযোগিতার জন্য উন্মুক্ত। ছাত্র, গবেষক, ইঞ্জিনিয়ার, কিংবা যারা বাংলা ভাষার প্রযুক্তি নিয়ে কাজ করতে চান, সবাইকে স্বাগত।
   body_en: >
-    We're open to collaboration. Students, researchers, engineers, or anyone who wants to build Bangla-language technology with us. The easiest way in is opening a GitHub issue or sending a pull request.
+    We're open to collaboration. Students, researchers, engineers, or anyone who wants to build Bangla-language technology with us.
+  contacts:
+    - label_bn: "কোড ও ইস্যু"
+      label_en: "Code and issues"
+      value: "github.com/banglallm"
+      url: "https://github.com/banglallm"
+      note_bn: "বাগ, ডেটার সমস্যা, বা পুল রিকোয়েস্ট। শুরু করার সবচেয়ে সহজ পথ।"
+      note_en: "Bugs, data problems, or a pull request. The easiest way in."
+    - label_bn: "নাঈমুল ইসলাম"
+      label_en: "Naymul Islam"
+      value: "naymul504@gmail.com"
+      url: "mailto:naymul504@gmail.com"
+      note_bn: "গবেষণা সহযোগিতা, বেঞ্চমার্ক জমা দেওয়া, ডেটাসেটের অনুরোধ।"
+      note_en: "Research collaboration, benchmark submissions, dataset requests."
+    - label_bn: "আব্দুল্লাহ খান জেহাদী"
+      label_en: "Abdullah Khan Zehady"
+      value: "brishtiteveja@gmail.com"
+      url: "mailto:brishtiteveja@gmail.com"
+      note_bn: "ল্যাবের দিকনির্দেশনা ও অংশীদারিত্ব।"
+      note_en: "Lab direction and partnerships."

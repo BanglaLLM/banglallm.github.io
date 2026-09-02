@@ -170,6 +170,11 @@ html[data-lang="bn"] .pub-figure figcaption { font-size: 14.5px; }
 .lead { color: var(--muted); font-size: 16px; margin: 0 0 8px; }
 .model-list, .repo-list { list-style: none; padding: 0; margin: 0; }
 .model-list > li, .repo-list > li { padding: 15px 0; border-bottom: 1px solid var(--line); }
+/* Two columns for the long flat lists, so the page reads as a grid instead of one
+   long scroll. Column gap only; the per-row rules keep the grid legible. */
+@media (min-width: 641px) {
+  .repo-list, .model-list.two-col { display: grid; grid-template-columns: 1fr 1fr; column-gap: 40px; }
+}
 .model-name, .repo-name { font-weight: 600; color: var(--ink); border: 0; }
 .model-name:hover, .repo-name:hover { color: var(--accent); border-bottom: 1px solid currentColor; }
 .model-size { color: var(--faint); font-size: 13px; margin-left: 10px; font-variant-numeric: tabular-nums; }
@@ -183,6 +188,28 @@ html[data-lang="bn"] .body-text { font-size: 17px; }
 .body-text p { margin: 0 0 14px; }
 .inline-links { margin: 16px 0 0; color: var(--muted); font-size: 14.5px; }
 .dot { color: var(--faint); padding: 0 4px; }
+
+/* Contact: one labelled route per card, so it is obvious which address does what */
+.contact-list {
+  list-style: none; padding: 0; margin: 22px 0 0;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+}
+.contact {
+  display: flex; flex-direction: column; gap: 4px;
+  padding-top: 13px; border-top: 1px solid var(--line);
+}
+.contact-label {
+  font-size: 11.5px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.09em; color: var(--faint);
+}
+html[data-lang="bn"] .contact-label { text-transform: none; letter-spacing: 0.02em; font-size: 13px; }
+.contact-value { font-size: 15px; font-weight: 600; overflow-wrap: anywhere; }
+.contact-note { color: var(--muted); font-size: 13.5px; line-height: 1.55; }
+html[data-lang="bn"] .contact-note { font-size: 14.5px; }
+@media (max-width: 760px) {
+  .contact-list { grid-template-columns: 1fr; gap: 0; }
+  .contact { padding-top: 13px; padding-bottom: 13px; }
+}
 
 /* People */
 .people-list { list-style: none; padding: 0; margin: 0; }
