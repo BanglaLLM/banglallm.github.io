@@ -98,6 +98,12 @@ All generated from _data so it cannot drift from what the page shows.
       "sameAs": {{ d.url | jsonify }},
       "inLanguage": "bn",
       "isAccessibleForFree": true,
+      {%- if d.keywords %}
+      "keywords": {{ d.keywords | jsonify }},
+      {%- endif %}
+      {%- if d.citation %}
+      "citation": {{ d.citation | jsonify }},
+      {%- endif %}
       {%- if d.license %}
       "license": {{ d.license | jsonify }},
       {%- endif %}

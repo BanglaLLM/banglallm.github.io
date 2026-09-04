@@ -13,6 +13,8 @@ families:
 
 datasets:
   - name: "BanglaSafe"
+    keywords: ["Bengali", "Bangla", "LLM safety", "safety benchmark", "red teaming", "harm taxonomy", "Bangladesh", "low-resource language"]
+    citation: "https://arxiv.org/abs/2608.22335"
     license: "https://creativecommons.org/licenses/by/4.0/"
     size_bn: "৮৭৯টি প্রশ্ন"
     size_en: "879 questions"
@@ -20,6 +22,7 @@ datasets:
     desc_en: "A safety test set in Bengali. 17 kinds of harm taken from Bangladeshi law, with each question written in five different styles. From the EMNLP 2026 Findings paper."
     url: "https://huggingface.co/datasets/BanglaLLM/BanglaSafe"
   - name: "bangla-alpaca-orca"
+    keywords: ["Bengali", "Bangla", "instruction tuning", "instruction dataset", "Alpaca", "Orca", "low-resource language"]
     license: "https://www.gnu.org/licenses/gpl-3.0.html"
     size_bn: "১,৭২,০০০ উদাহরণ"
     size_en: "172,000 examples"
@@ -27,6 +30,7 @@ datasets:
     desc_en: "Bangla questions paired with answers, used to teach a model to follow instructions. Alpaca and Orca combined."
     url: "https://huggingface.co/datasets/BanglaLLM/bangla-alpaca-orca"
   - name: "bangla-alpaca"
+    keywords: ["Bengali", "Bangla", "instruction tuning", "instruction dataset", "Alpaca", "low-resource language"]
     license: "https://www.gnu.org/licenses/gpl-3.0.html"
     size_bn: "৫২,০০০ উদাহরণ"
     size_en: "52,000 examples"
@@ -34,6 +38,7 @@ datasets:
     desc_en: "The Alpaca instruction set translated into Bangla."
     url: "https://huggingface.co/datasets/BanglaLLM/bangla-alpaca"
   - name: "bangla_math_by_Ashrafur"
+    keywords: ["Bengali", "Bangla", "mathematics", "math reasoning", "word problems", "low-resource language"]
     size_bn: "৮,৫৯,০০০ উদাহরণ"
     size_en: "859,000 examples"
     desc_bn: "বাংলায় গণিতের সমস্যা, সঙ্গে সমাধান কীভাবে করতে হয় তা দেখানো।"
