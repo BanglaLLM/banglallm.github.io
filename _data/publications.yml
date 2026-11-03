@@ -51,9 +51,3 @@ published:
     acl: "https://aclanthology.org/2025.banglalp-1.5/"
     note_bn: "BanglaBias, ২০০টি বাংলা সংবাদ নিবন্ধ। প্রতিটিকে চিহ্নিত করা হয়েছে সরকারপন্থী, সরকার-সমালোচক বা নিরপেক্ষ হিসেবে। ২৮টি ভাষা-মডেল এই পার্থক্য কতটা ধরতে পারে, আমরা তা যাচাই করেছি।"
     note_en: "BanglaBias, 200 Bangla news articles, each labeled as leaning towards the government, critical of it, or neutral. We tested 28 language models on how well they could tell the difference."
-
-in_progress:
-  - title_bn: "TutorLM"
-    title_en: "TutorLM"
-    note_bn: "শিক্ষার্থীদের পড়াতে পারে এমন বাংলা মডেল নিয়ে কাজ চলছে। গবেষণাপত্র এখনও প্রকাশিত হয়নি।"
-    note_en: "Bengali models that can tutor students. The paper is not out yet."
