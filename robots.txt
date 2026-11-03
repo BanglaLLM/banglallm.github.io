@@ -6,3 +6,6 @@ User-agent: *
 Allow: /
 
 Sitemap: {{ site.url }}{{ site.baseurl }}/sitemap.xml
+# BanglaSafe lives in its own repo (BanglaLLM/banglasafe, served from /banglasafe/),
+# so jekyll-sitemap cannot see it. Its sitemap is listed here so crawlers find it.
+Sitemap: https://banglallm.github.io/banglasafe/sitemap.xml

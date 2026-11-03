@@ -10,7 +10,7 @@ published:
       - { name: "Sabik Bin Sultan", lab: true }
       - { name: "Abdullah Khan Zehady", lab: true }
     arxiv: "https://arxiv.org/abs/2608.22335"
-    acl: null
+    acl: "https://aclanthology.org/2026.findings-emnlp.1403/"
     project: "https://banglallm.github.io/banglasafe/"
     code: "https://github.com/BanglaLLM/banglasafe"
     dataset: "https://huggingface.co/datasets/BanglaLLM/BanglaSafe"
